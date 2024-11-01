@@ -1,0 +1,106 @@
+table {
+  width: 600px;
+  border-collapse: collapse;
+}
+tr {
+  height: 50px;
+}
+td {
+  border: 1px solid black;
+  height: 50px;
+}
+.first-row {
+  background-color: #078f8f;
+  color: white;
+}
+.second-row {
+  background-color: #f5f507;
+  color: black;
+}
+
+.clock {
+  margin-top: 2rem;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: #f0f0f0;
+  border: 2px solid black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.hand-vertical,
+.hand-horizontal {
+  position: absolute;
+  background-color: black;
+}
+.hand-vertical {
+  width: 4px;
+  height: 75px;
+  top: 15px;
+}
+.hand-horizontal {
+  width: 65px;
+  height: 4px;
+  right: 25px;
+}
+
+.top {
+  top: 5px;
+}
+.bottom {
+  bottom: 5px;
+}
+.left {
+  left: 5px;
+}
+.right {
+  right: 5px;
+}
+
+.clock-translate {
+  margin-top: 2rem;
+  width: 150px;
+  height: 150px;
+  background-color: #f0f0f0;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.top-dot {
+  transform: translateX(65px);
+}
+.bottom-dot {
+  transform: translateY(130px) translateX(65px);
+}
+.left-dot {
+  transform: translateY(65px);
+}
+.right-dot {
+  transform: translateY(65px) translateX(130px);
+}
+
+.hand-vertical-translate,
+.hand-horizontal-translate {
+  background-color: black;
+}
+.hand-vertical-translate {
+  width: 4px;
+  height: 75px;
+  transform: translateX(75px) translateY(10px);
+}
+.hand-horizontal-translate {
+  width: 65px;
+  height: 4px;
+  transform: translateX(65px);
+}
