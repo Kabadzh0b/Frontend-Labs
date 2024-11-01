@@ -13,9 +13,17 @@ td {
   background-color: #078f8f;
   color: white;
 }
+.first-row:hover {
+  background-color: #f5f507;
+  color: black;
+}
 .second-row {
   background-color: #f5f507;
   color: black;
+}
+.second-row:hover {
+  background-color: #078f8f;
+  color: white;
 }
 
 .clock {
