@@ -4,7 +4,8 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: calc(100vw - 10px);
+  height: calc(100vh - 10px);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -15,7 +16,6 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #5dade2;
-  width: 100%;
   flex: 1;
   padding: 20px;
   color: #fff;
@@ -46,7 +46,6 @@ body {
   justify-content: center;
   flex: 3;
   background-color: #7dcea0;
-  padding: 20px;
   color: #333;
   text-align: center;
 }
@@ -54,7 +53,6 @@ body {
 .footer {
   height: 20%;
   background-color: #f5b7b1;
-  width: 100%;
   padding: 20px;
   color: #333;
   text-align: center;
