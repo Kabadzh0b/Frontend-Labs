@@ -1,27 +1,27 @@
-const myVariantElement = document.getElementById("my-variant-element");
-console.log(myVariantElement); // Check if this logs the element correctly
+const myVariantElementById = document.getElementById("my-variant-element");
 
-myVariantElement.classList.add("new-color");
+// basic setup
+myVariantElementById.classList.add("new-color");
 
 const myVariantElementByQuerySelector = document.querySelector(
-  "#my-variant-element"
+  "#my-variant-element-2"
 );
 
 let changedColor = false;
 
+myVariantElementById.addEventListener("click", () => {
+  myVariantElementById.classList.toggle("new-color");
+  myVariantElementById.classList.toggle("change-color");
+});
+
 myVariantElementByQuerySelector.addEventListener("click", () => {
-  if (changedColor) {
-    myVariantElementByQuerySelector.classList.remove("new-color");
+  if (!changedColor) {
     myVariantElementByQuerySelector.classList.add("change-color");
-    changedColor = false;
-  } else {
-    myVariantElementByQuerySelector.classList.remove("change-color");
-    myVariantElementByQuerySelector.classList.add("new-color");
     changedColor = true;
+    return;
   }
-  // or, if you want to toggle the class:
-  //   myVariantElementByQuerySelector.classList.toggle("new-color");
-  //   myVariantElementByQuerySelector.classList.toggle("change-color");
+  myVariantElementByQuerySelector.classList.toggle("new-color");
+  myVariantElementByQuerySelector.classList.toggle("change-color");
 });
 
 const addButton = document.getElementById("add-button");
